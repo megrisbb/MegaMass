@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+    <button class="open-modal-btn" data-type="content" data-content="<table class='styled-table'>
+    <tr>
+    <th>Товар</th>
+    <th>Назва в базі</th>
+    <th>Штрих код</th>
+    </tr>
+    <tr>
+    <td>Шейкер ON БІЛИЙ</td>
+    <td>Optimum Nutrition Shaker bottle 750 ml white</td>
+    <td>2000121898270</td>
+    </tr>
+    <tr>
+    <td>Шейкер ON ЧОРНИЙ</td>
+    <td>Шейкер ON ЧОРНИЙ</td>
+    <td>5903140691723</td>
+    </tr>
+    </table>">Штрих-коди до шейкерів
+    </button>
+</div>
+
+<div class="container">
+    <h2>Термінал</h2>
+    <button class="open-modal-btn" data-video="https://youtube.com/embed/qf3M6bXC73M">Як закривати оплати
+        по терміналу?
+    </button>
+    <div>
+        <button class="open-modal-btn" data-video="https://youtube.com/embed/_kZ4L8HUlmo">Як робити
+            повернення по новому терміналу?
+        </button>
+    </div>
+
+    <h2>Прихід товару</h2>
+    <button class="open-modal-btn" data-video="https://www.youtube.com/embed/4J53IpY9WMI">Як прийняти товар зі складу,
+        магазину
+    </button>
+    <button class="open-modal-btn" data-video="https://www.youtube.com/embed/SBDyb2B2cKA">Як прийняти товар з НП
+    </button>
+
+    <h2>Переміщення товару</h2>
+    <button class="open-modal-btn" data-video="https://www.youtube.com/embed/4J53IpY9WMI">Переміщення товару на
+        інший магазин
+    </button>
+
+    <h2>Клієнт відмовився від посилки на НП. Повернення товару</h2>
+    <button class="open-modal-btn" data-video="https://www.youtube.com/embed/IctJ8VW1xLQ">Як зробити повернення товару
+        по 1С
+    </button>
+
+    <h2>Залишки товару в магазині та по мережі</h2>
+    <button class="open-modal-btn" data-video="https://www.youtube.com/embed/z8hWH5yZ4jg">Як подивитись наявність
+        товарів у магазині або в мережі
+    </button>
+</div>
+
+<div class="modal" id="videoModal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <iframe id="videoFrame" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+        <div id="contentArea"></div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
